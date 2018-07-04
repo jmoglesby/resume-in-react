@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap';
 import logo from './logo.svg';
 import './App.css';
+import Button from './Button/Button.js';
 
 class App extends Component {
   render() {
@@ -14,8 +14,8 @@ class App extends Component {
           checkout what I've been:
         </p>
         <div>
-          <Button color="success">learning</Button>
-          <Button color="info">creating</Button>
+          <Button learning>learning</Button>
+          <Button creating>creating</Button>
         </div>
       </div>
     );
