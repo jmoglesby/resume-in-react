@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 import logo from './logo.svg';
 import './App.css';
 
@@ -7,12 +8,15 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="Greeting">Hi, I'm Jeremy</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          checkout what I've been:
         </p>
+        <div>
+          <Button color="success">learning</Button>
+          <Button color="info">creating</Button>
+        </div>
       </div>
     );
   }
