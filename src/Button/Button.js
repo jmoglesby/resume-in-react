@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
 const Button = styled.button`
   display: inline-block;
@@ -8,17 +8,23 @@ const Button = styled.button`
   width: 11rem;
   background: transparent;
   color: white;
-  border: 2px solid white;
+  border: none;
 
-  ${props => props.learning && css`
+  ${props => props.id === "learning" && css`
     background: blue;
-    color: white;
+    ${props => props.toggled === true && css`
+      background: transparent;
+      text-decoration: underline;
+    `}
   `}
 
-  ${props => props.creating && css`
+  ${props => props.id === "creating" && css`
     background: green;
-    color: white;
+    ${props => props.toggled === true && css`
+      background: transparent;
+      text-decoration: underline;
+    `}
   `}
 `;
 
-export default Button
+export default Button;

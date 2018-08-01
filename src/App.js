@@ -1,22 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Button from './Button/Button.js';
+import ToggleButton from './ToggleButton/ToggleButton.js';
+import Scroller from './Scroller/Scroller.js';
 
 class App extends Component {
+  state = { activeToggle: "" }
+
+  handleToggle = (id) => {
+    this.setState({ activeToggle: id === this.state.activeToggle ? "" : id });
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="Greeting">Hi, I'm Jeremy</h1>
+          <p className="App-intro">
+            checkout what I've been
+          </p>
         </header>
-        <p className="App-intro">
-          checkout what I've been:
-        </p>
         <div>
-          <Button learning>learning</Button>
-          <Button creating>creating</Button>
+          <ToggleButton id="learning" 
+            onToggle={this.handleToggle} 
+            toggled={this.state.activeToggle === "learning"}
+          >learning</ToggleButton>
+          <ToggleButton id="creating" 
+            onToggle={this.handleToggle} 
+            toggled={this.state.activeToggle === "creating"}
+          >creating</ToggleButton>
         </div>
+        <Scroller display={this.state.activeToggle}/>
       </div>
     );
   }
