@@ -14,7 +14,7 @@ const Button = styled.button`
     background: blue;
     ${props => props.toggled === true && css`
       background: transparent;
-      text-decoration: underline;
+      text-shadow: 4px 4px 14px #4444dd;
     `}
   `}
 
@@ -22,7 +22,7 @@ const Button = styled.button`
     background: green;
     ${props => props.toggled === true && css`
       background: transparent;
-      text-decoration: underline;
+      text-shadow: 4px 4px 14px #4444dd;
     `}
   `}
 `;

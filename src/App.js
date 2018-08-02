@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 import ToggleButton from './ToggleButton/ToggleButton.js';
 import Scroller from './Scroller/Scroller.js';
+
+library.add(faChevronCircleLeft, faChevronCircleRight);
 
 class App extends Component {
   state = { activeToggle: "" }
@@ -19,7 +23,7 @@ class App extends Component {
             checkout what I've been
           </p>
         </header>
-        <div>
+        <div className="Buttons">
           <ToggleButton id="learning" 
             onToggle={this.handleToggle} 
             toggled={this.state.activeToggle === "learning"}
