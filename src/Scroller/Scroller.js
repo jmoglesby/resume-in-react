@@ -5,14 +5,23 @@ import { Map } from 'core-js';
 import ScrollerArrow from './ScrollerArrow/ScrollerArrow.js';
 
 class Scroller extends Component {
-  state = { page: 0 }
+  state = { 
+    index: 0,
+    display: this.props.display
+   }
   
-  pageLeft = () => {
-    this.setState({ page: this.state.page -= 1 })
+  indexLeft = () => {
+    this.setState({ index: this.state.index -= 1 })
   }
 
-  pageRight = () => {
-    this.setState({ page: this.state.page += 1 })
+  indexRight = () => {
+    this.setState({ index: this.state.index += 1 })
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.display !== this.state.display) {
+      this.setState({ index: 0 });
+    }
   }
 
   render() {
@@ -22,25 +31,27 @@ class Scroller extends Component {
       .set('creating', creating);
     const content = display === "" ? "" :
       data.get(display);
+    const left_arrow_state = this.state.index <= 0 ? true : false
+    const right_arrow_state = this.state.index >= content.length - 1 ? true : false
 
     if (content) {
       return(
         <div className="Scroller-body">
           <div className="Scroll-left">
-            <ScrollerArrow dir="left" onClick={this.pageLeft}/>
+            <ScrollerArrow dir="left" disabled={left_arrow_state} onClick={this.indexLeft}/>
           </div>
           <div className="Scroller-content">
-            <h1>{content[0].heading}</h1>
-            <p>{content[0].text}</p>
+            <h1>{content[this.state.index].heading}</h1>
+            <p>{content[this.state.index].text}</p>
           </div>
           <div className="Scroll-right">
-            <ScrollerArrow dir="right" onClick={this.pageRight}/>
+            <ScrollerArrow dir="right" disabled={right_arrow_state} onClick={this.indexRight}/>
           </div>
         </div>
       )
     } else {
       return (
-        <div>{this.props.display}</div>
+        null
       )
     }
   };

@@ -11,18 +11,24 @@ const Button = styled.button`
   border: none;
 
   ${props => props.id === "learning" && css`
-    background: blue;
+    background: rgba(33, 2, 207, 0.47);
+    filter: drop-shadow(3px 3px 3px black);
     ${props => props.toggled === true && css`
-      background: transparent;
-      text-shadow: 4px 4px 14px #4444dd;
+      filter: drop-shadow(1px 1px 1px black);;
+      transform: translateY(3px) translateX(3px);
+      color: lightgray;
+      text-shadow: 0px 0px 18px lightblue;
     `}
   `}
 
   ${props => props.id === "creating" && css`
-    background: green;
+    background: rgba(108, 2, 207, 0.47);
+    filter: drop-shadow(3px 3px 3px black);
     ${props => props.toggled === true && css`
-      background: transparent;
-      text-shadow: 4px 4px 14px #4444dd;
+      filter: drop-shadow(1px 1px 1px black);;
+      transform: translateY(3px) translateX(3px);
+      color: lightgray;
+      text-shadow: 0px 0px 18px lightpink;
     `}
   `}
 `;

@@ -1,13 +1,13 @@
 const creating = [
   {
-    heading: "Creating1",
+    heading: "www.speedie.equipment",
     img: './images/creating1.jpg',
-    text: "this is creating1"
+    text: "This equipment database, which we lovingly call 'The Veg-o-matic', is a Ruby on Rails application."
   },
   {
-    heading: "Creating2",
+    heading: "This site!",
     img: './images/creating2.jpg',
-    text: "this is creating2"
+    text: "This interactive resume is a React app integrating styled components."
   }
 ]
 
