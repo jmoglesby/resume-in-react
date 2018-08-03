@@ -7,7 +7,7 @@ const Button = styled.button`
   margin: 0.5rem 1rem;
   width: 11rem;
   background: transparent;
-  color: white;
+  color: darkgray;
   border: none;
 
   ${props => props.id === "learning" && css`
@@ -16,7 +16,7 @@ const Button = styled.button`
     ${props => props.toggled === true && css`
       filter: drop-shadow(1px 1px 1px black);;
       transform: translateY(3px) translateX(3px);
-      color: lightgray;
+      color: whitesmoke;
       text-shadow: 0px 0px 18px lightblue;
     `}
   `}
@@ -27,8 +27,8 @@ const Button = styled.button`
     ${props => props.toggled === true && css`
       filter: drop-shadow(1px 1px 1px black);;
       transform: translateY(3px) translateX(3px);
-      color: lightgray;
-      text-shadow: 0px 0px 18px lightpink;
+      color: whitesmoke;
+      text-shadow: 0px 0px 18px mediumpurple;
     `}
   `}
 `;

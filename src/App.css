@@ -8,17 +8,18 @@
 }
 
 .App-header {
-  height: 150px;
   padding: 20px;
   color: white;
 }
 
 .Greeting {
-  font-size: 4.5em;
+  font: 4.5em "Montserrat Alternates", sans-serif;
+  text-shadow: 2px 2px 12px black;
 }
 
 .App-intro {
   font-size: 1.5em;
+  font-weight: lighter;
 }
 
 .Buttons {

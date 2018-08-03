@@ -1,7 +1,7 @@
 const creating = [
   {
     heading: "www.speedie.equipment",
-    img: './images/creating1.jpg',
+    img: './images/vegomatic.png',
     text: "This equipment database, which we lovingly call 'The Veg-o-matic', is a Ruby on Rails application."
   },
   {
