@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import styled, { css } from 'styled-components';
 import learning from '../Content/LearningContent.js';
 import creating from '../Content/CreatingContent.js';
 import { Map } from 'core-js';
 import ScrollerArrow from './ScrollerArrow/ScrollerArrow.js';
+
+// define styled div for content here
 
 class Scroller extends Component {
   state = { 

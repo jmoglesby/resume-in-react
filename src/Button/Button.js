@@ -28,7 +28,7 @@ const Button = styled.button`
       filter: drop-shadow(1px 1px 1px black);;
       transform: translateY(3px) translateX(3px);
       color: whitesmoke;
-      text-shadow: 0px 0px 18px mediumpurple;
+      text-shadow: 0px 0px 18px plum;
     `}
   `}
 `;
