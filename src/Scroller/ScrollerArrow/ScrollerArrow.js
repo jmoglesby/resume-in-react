@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '../../../node_modules/@fortawesome/react-fontaw
 
 class ScrollerArrow extends Component {
   
+  // When clicked, runs the onClick prop on the component in Scroller
+  // to change the index of content to disiplay from the data array
   handleClick = () => {
     if (this.props.onClick) {
       this.props.onClick();

@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+// A single styled button baseline that changes style
+// based on props of the component
 const Button = styled.button`
   display: inline-block;
   border-radius: 3px;

@@ -5,11 +5,16 @@ import './App.css';
 import ToggleButton from './ToggleButton/ToggleButton.js';
 import Scroller from './Scroller/Scroller.js';
 
+// Fontawesome's library helper for loading only specific icons
+// into the app for use in all components
 library.add(faChevronCircleLeft, faChevronCircleRight);
 
 class App extends Component {
   state = { activeToggle: "" }
 
+  // When button is toggled set state activeToggle to the id of
+  // toggled button, or else to blank -- this is used to display
+  // the appropriate content in the Scroller
   handleToggle = (id) => {
     this.setState({ activeToggle: id === this.state.activeToggle ? "" : id });
   };
@@ -20,7 +25,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="Greeting">Hi, I'm Jeremy</h1>
           <p className="App-intro">
-            checkout what I've been
+            <em>checkout what I've been...</em>
           </p>
         </header>
         <div className="Buttons">
