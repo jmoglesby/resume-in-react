@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
 }
 
 .App-logo {
@@ -32,10 +36,26 @@
 .Scroller-body {
   display: grid;
   grid-template-columns: 20% 60% 20%;
+  justify-items: center;
 }
 
-.Scroller-content {
-  overflow-y: scroll;
+.Scroller-heading {
+  font: "Roboto", sans-serif;
+}
+
+.Scroller-text {
+  font: 1.2em "Roboto", sans-serif;
+  text-align: left;
+  line-height: 150%;
+}
+
+img {
+  align-self: center;
+  width: 98%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: .6em;
+  box-shadow: 4px 4px 24px black;
 }
 
 .Svg-disabled {

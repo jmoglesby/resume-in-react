@@ -13,7 +13,7 @@ const Button = styled.button`
   border: none;
 
   ${props => props.id === "learning" && css`
-    background: rgba(33, 2, 207, 0.47);
+    background: rgba(33, 2, 207, 0.40);
     filter: drop-shadow(3px 3px 3px black);
     ${props => props.toggled === true && css`
       filter: drop-shadow(1px 1px 1px black);;
@@ -24,7 +24,7 @@ const Button = styled.button`
   `}
 
   ${props => props.id === "creating" && css`
-    background: rgba(108, 2, 207, 0.47);
+    background: rgba(108, 2, 207, 0.40);
     filter: drop-shadow(3px 3px 3px black);
     ${props => props.toggled === true && css`
       filter: drop-shadow(1px 1px 1px black);;

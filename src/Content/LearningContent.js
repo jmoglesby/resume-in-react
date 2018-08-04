@@ -1,12 +1,12 @@
 const learning = [
   {
     heading: "Learning1",
-    img: './images/learning1.jpg',
-    text: "this is text"
+    img: '',
+    text: "this is text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text lots of text "
   },
   {
     heading: "Learning2",
-    img: './images/learning2.jpg',
+    img: '',
     text: "this is also text"
   }
 ]

@@ -1,26 +1,43 @@
 import React, { Component } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import learning from '../Content/LearningContent.js';
 import creating from '../Content/CreatingContent.js';
 import { Map } from 'core-js';
 import ScrollerArrow from './ScrollerArrow/ScrollerArrow.js';
 
-// Styled div for Scroller-body
+// Styled div for content in Scroller-body
+const ContentContainer = styled.div`
+  align-self: center;
+  justify-self: center;
+  overflow-y: scroll;
+  border-radius: 5px;
+  background-color: hsla(360, 0%, 100%, 0.15);
+  max-width: 600px;
+  max-height: 400px;
+  padding: 20px;
+`;
 
 class Scroller extends Component {
-  state = { 
-    index: 0,
-    display: this.props.display
-   }
+  state = { index: 0 }
   
   // Changes index -1 when left arrow clicked
   indexLeft = () => {
     this.setState({ index: this.state.index -= 1 })
+    this.resetScroll();
   }
 
   // Changes index +1 when right arrow clicked
   indexRight = () => {
     this.setState({ index: this.state.index += 1 })
+    this.resetScroll();
+  }
+
+  
+
+  // Reset the scroll position of the div showing main content
+  resetScroll = () => {
+    const contentDiv = document.getElementById('content-div');
+    contentDiv.scrollTop = 0;
   }
 
   // Ensures that if the Scroller being displayed changes
@@ -54,8 +71,11 @@ class Scroller extends Component {
             <ScrollerArrow dir="left" disabled={left_arrow_state} onClick={this.indexLeft}/>
           </div>
           <div className="Scroller-content">
-            <h1>{content[this.state.index].heading}</h1>
-            <p>{content[this.state.index].text}</p>
+            <ContentContainer id="content-div">
+              <h1 className="Scroller-heading">{content[this.state.index].heading}</h1>
+              <img src={content[this.state.index].img}/>
+              <p className="Scroller-text">{content[this.state.index].text}</p>
+            </ContentContainer>
           </div>
           <div className="Scroll-right">
             <ScrollerArrow dir="right" disabled={right_arrow_state} onClick={this.indexRight}/>
