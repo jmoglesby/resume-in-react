@@ -43,6 +43,10 @@
   font: "Roboto", sans-serif;
 }
 
+.Scroller-link {
+  margin-bottom: .6em;
+}
+
 .Scroller-text {
   font: 1.2em "Roboto", sans-serif;
   text-align: left;
