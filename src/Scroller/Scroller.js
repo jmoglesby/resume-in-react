@@ -74,7 +74,7 @@ class Scroller extends Component {
             <ContentContainer id="content-div">
               <h1 className="Scroller-heading">{content[this.state.index].heading}</h1>
               <p className="Scroller-link">
-                <a href={content[this.state.index].url}>
+                <a href={content[this.state.index].url} target="_blank">
                   {content[this.state.index].url}
                 </a>
               </p>
