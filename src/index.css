@@ -9,3 +9,9 @@ body {
   font-family: sans-serif;
   background-color: transparent;
 }
+
+body:before {
+  content: url(https://dsh.re/91ca4)
+           url(https://dsh.re/b02be);
+  visibility: hidden;
+}
