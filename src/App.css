@@ -40,10 +40,12 @@
 }
 
 .Scroll-right {
+  /* size changes with respect to viewport width */
   font-size: 2vw;
 }
 
 .Scroll-left {
+  /* size changes with respect to viewport width */
   font-size: 2vw;
 }
 
