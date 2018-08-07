@@ -81,6 +81,7 @@ svg {
 
 .Svg-disabled {
   color: gray;
+  z-index: 0;
 }
 
 button {
