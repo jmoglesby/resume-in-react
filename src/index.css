@@ -27,7 +27,8 @@ body:before {
            url(https://dsh.re/b2839)
            url(https://dsh.re/2c98e)
            url(https://dsh.re/b12ea)
-           url(https://dsh.re/be818);
+           url(https://dsh.re/be818)
+           url(/src/Content/images/vegomatic.png);
   visibility: hidden;
   position: absolute;
   left: -999em;
