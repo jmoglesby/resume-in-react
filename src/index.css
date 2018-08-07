@@ -13,21 +13,20 @@ body {
 body:before {
   /* Preload images for Scroller to avoid
   hesitation in image changes */
-  content: url(https://dsh.re/91ca4)
-           url(https://dsh.re/b02be)
-           url(https://dsh.re/75dc2)
-           url(https://dsh.re/cd47b)
-           url(https://dsh.re/1e1f0a)
-           url(https://dsh.re/77a8a)
-           url(https://dsh.re/950e2)
-           url(https://dsh.re/94939)
-           url(https://dsh.re/1dd2a)
-           url(https://dsh.re/ddcfa)
-           url(https://dsh.re/77c47)
-           url(https://dsh.re/b2839)
-           url(https://dsh.re/2c98e)
-           url(https://dsh.re/b12ea)
-           url(https://dsh.re/be818)
+  content: url(/src/Content/images/this.png)
+           url(/src/Content/images/beginningruby.png)
+           url(/src/Content/images/agilerails.png)
+           url(/src/Content/images/railsguide.png)
+           url(/src/Content/images/railsconf.png)
+           url(/src/Content/images/practicingrails.png)
+           url(/src/Content/images/railsangular.png)
+           url(/src/Content/images/programmingruby.png)
+           url(/src/Content/images/js.png)
+           url(/src/Content/images/simplejs.png)
+           url(/src/Content/images/reactforreal.png)
+           url(/src/Content/images/sqlqueries.png)
+           url(/src/Content/images/progit.png)
+           url(/src/Content/images/exceptionalruby.png)
            url(/src/Content/images/vegomatic.png);
   visibility: hidden;
   position: absolute;
