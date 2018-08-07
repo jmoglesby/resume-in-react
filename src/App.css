@@ -39,6 +39,14 @@
   justify-items: center;
 }
 
+.Scroll-right {
+  font-size: 2vw;
+}
+
+.Scroll-left {
+  font-size: 2vw;
+}
+
 .Scroller-heading {
   font: 2em "Roboto", sans-serif;
 }
@@ -61,6 +69,10 @@ img {
   border-radius: 10px;
   margin-bottom: .6em;
   box-shadow: 4px 4px 24px black;
+}
+
+svg {
+  z-index: 0;
 }
 
 .Svg-disabled {
