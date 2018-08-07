@@ -51,6 +51,7 @@
 
 .Scroller-heading {
   font: 2em "Roboto", sans-serif;
+  text-shadow: 2px 1px 3px rgb(26, 26, 26);
 }
 
 .Scroller-link {
@@ -62,6 +63,7 @@
   font-weight: 100;
   text-align: left;
   line-height: 150%;
+  text-shadow: 2px 1px 3px rgb(26, 26, 26);
 }
 
 img {
