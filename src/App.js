@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronCircleLeft, 
+        faChevronCircleRight, 
+        faExternalLinkAlt, 
+        faExternalLinkSquareAlt 
+      } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 import ToggleButton from './ToggleButton/ToggleButton.js';
 import Scroller from './Scroller/Scroller.js';
 
 // Fontawesome's library helper for loading only specific icons
 // into the app for use in all components
-library.add(faChevronCircleLeft, faChevronCircleRight);
+library.add(faChevronCircleLeft, faChevronCircleRight, faExternalLinkAlt, faExternalLinkSquareAlt);
 
 class App extends Component {
   state = { activeToggle: "" }

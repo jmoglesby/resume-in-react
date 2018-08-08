@@ -4,6 +4,7 @@ import learning from '../Content/LearningContent.js';
 import creating from '../Content/CreatingContent.js';
 import { Map } from 'core-js';
 import ScrollerArrow from './ScrollerArrow/ScrollerArrow.js';
+import ExternalLink from './ExternalLink.js';
 
 // Styled div for content in Scroller-body
 const ContentContainer = styled.div`
@@ -73,11 +74,10 @@ class Scroller extends Component {
           <div className="Scroller-content">
             <ContentContainer id="content-div">
               <h1 className="Scroller-heading">{content[this.state.index].heading}</h1>
-              <p className="Scroller-link">
-                <a href={content[this.state.index].url} target="_blank">
-                  {content[this.state.index].url}
-                </a>
-              </p>
+              { content[this.state.index].url ? 
+                  <ExternalLink id={content[this.state.index].url}/>
+                  : <div/> 
+              }
               <img src={content[this.state.index].img}/>
               <p className="Scroller-text">{content[this.state.index].text}</p>
             </ContentContainer>
