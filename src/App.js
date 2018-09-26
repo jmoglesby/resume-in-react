@@ -36,11 +36,15 @@ class App extends Component {
           <ToggleButton id="learning" 
             onToggle={this.handleToggle} 
             toggled={this.state.activeToggle === "learning"}
-          >learning</ToggleButton>
+          >
+            learning
+          </ToggleButton>
           <ToggleButton id="creating" 
             onToggle={this.handleToggle} 
             toggled={this.state.activeToggle === "creating"}
-          >creating</ToggleButton>
+          >
+            creating
+          </ToggleButton>
         </div>
         <Scroller display={this.state.activeToggle}/>
       </div>
