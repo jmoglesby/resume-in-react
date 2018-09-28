@@ -60,7 +60,8 @@ class Scroller extends Component {
     const content = display === "" ? "" :
       data.get(display);
     // Sets the state of the left/right arrow buttons to enable
-    // graying them out when the start or end of the content index is reached
+    // graying them out when the start or end of the content index is reached;
+    // results in prop `disabled="true" or "false"
     const left_arrow_state = this.state.index <= 0 ? true : false
     const right_arrow_state = this.state.index >= content.length - 1 ? true : false
 
