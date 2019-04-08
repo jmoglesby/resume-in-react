@@ -9,7 +9,7 @@ class ExternalLink extends Component {
     return(
       <p className="Scroller-link">
         <a href={this.props.id} target="_blank">
-          SEE IT {icon}
+          github {icon}
         </a>
       </p> 
     )
