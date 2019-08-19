@@ -13,13 +13,13 @@ const creating = [
   {
     heading: "Splurty",
     img: splurty,
-    url: 'https://splurty-jeremy-oglesby.herokuapp.com',
-    text: "A database-powered quote generator with a mobile-first design, using the Ruby on Rails framework, HTML, and CSS. Uses Git and GitHub for version control, and launched on Heroku."
+    url: 'https://github.com/jmoglesby/splurty',
+    text: "A database-powered quote randomizer with a mobile-first design, using the Ruby on Rails framework, HTML, and CSS. Uses Git and GitHub for version control, and launched on Heroku."
   },
   {
     heading: "Nomster",
     img: nomster,
-    url: 'https://nomster-jeremy-oglesby.herokuapp.com',
+    url: 'https://github.com/jmoglesby/nomster',
     text: "A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication."
   },
   {
