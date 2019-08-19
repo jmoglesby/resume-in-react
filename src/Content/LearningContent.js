@@ -11,6 +11,8 @@ import reactforreal from '../Content/images/reactforreal.png';
 import sqlqueries from '../Content/images/sqlqueries.png';
 import progit from '../Content/images/progit.png';
 import exceptional from '../Content/images/exceptionalruby.png';
+import edupoint from '../Content/images/edupoint.png';
+import bootcamp from '../Content/images/bootcamp.png';
 
 const learning = [
   {
@@ -51,17 +53,17 @@ const learning = [
   {
     heading: "You Don't Know JS",
     img: js,
-    text: "In the process of building my equipment database, I ran into areas where I knew I would want to use JavaScript to allow for smoother and more flexible user experiences, and responsive feedback while a user interacted with the app. I was usually able to find some jQuery snippet that accomplished what I needed it to, but was totally mystified as to how and why they worked... so after discovering Kyle Simpson's free book on JavaScript, I began reading through it. I started working through this bit by bit, in October 2017, usually just focusing on a section I needed help understanding, rather than reading it straight through. For that reason, I still have not read this one in entirety, but am working through it a section at a time, as I get to aspects of using JavaScript that I need help understanding. Most recently (as I write this), I went through the section on Closures, which has helped me to better understand the passing of props and use of props and state in functions in React. Since I am learning to work in React right now, I've decided next to go through the 'this & Object Prototypes' section of this work. I hope to gain a much more solid understanding of JavaScript as I continue to make my way through this one."
+    text: "In the process of building my equipment database, I ran into areas where I knew I would want to use JavaScript to allow for smoother and more flexible user experiences, and responsive feedback while a user interacted with the app. I was usually able to find some jQuery snippet that accomplished what I needed it to, but was totally mystified as to how and why they worked... so after discovering Kyle Simpson's free book on JavaScript, I began reading through it. I started working through this bit by bit, in October 2017, usually just focusing on a section I needed help understanding, rather than reading it straight through.  Most recently, I went through the section on Closures, which has helped me to better understand the passing of props and use of props and state in functions in React. I hope to gain a much more solid understanding of JavaScript as I continue to make my way through this one."
   },
   {
     heading: "Simplifying JavaScript",
     img: simplejs,
-    text: "Alongside 'You Don't Know JS', I have been going through this excellent work by Joe Morgan as well. I wanted to make sure that as I learned JavaScript, I was keeping up with the best ways to do things according to most recent versions of the language, namely ES6. Morgan has been very helpful for my understanding of working easily with Arrays and Maps in particular -- I've learned how to use the spread operator to get data where I need it to be, and how to chain methods for easy in-place manipulation. I've also learned the importance of clear declaration of variables and when to use each type (var, let, or const), and Morgan gave a demonstration of arrow functions that, as a JavaScript novice, I found quite helpful. I haven't finished this one yet either (I'm about 3/4 of the way through), but that's because some of the later sections are still a bit beyond me at this point."
+    text: "Alongside 'You Don't Know JS', I have been going through this excellent work by Joe Morgan as well. I wanted to make sure that as I learned JavaScript, I was keeping up with the best ways to do things according to most recent versions of the language, namely ES6. Morgan has been very helpful for my understanding of working easily with Arrays and Maps in particular -- I've learned how to use the spread operator to get data where I need it to be, and how to chain methods for easy in-place manipulation. I've also learned the importance of clear declaration of variables and when to use each type (var, let, or const), and Morgan gave a demonstration of arrow functions that, as a JavaScript novice, I found quite helpful."
   },
   {
     heading: "React for Real",
     img: reactforreal,
-    text: "Knowing that React is a popular front-end framework, I decided to purchase this book in April 2018 to see if I wanted to choose React over Angular, which I had already gotten to try out in David Copeland's book on Rails. Ludovico Fischer, the author of this book, as well as Michael Jordan, with whom I attended a React webinar recently, convinced me that I did, indeed, want to focus on React for complex front-end JavaScript functionality. While I did not find Fischer's method of laying out his React applications particularly appealing, as compared to Jordan's methods or the examples that make use of Styled Components (which I love), I did pick up important aspects of the fundamentals of building components, creating and changing state within a component, and passing props through nested components. In working through this book, I built a word-counter application that would dynamically count the number of words the user had typed into the text area, and live-update a progress bar to give a visual indication of progress towards a stated word-count goal. I learned a bit about how to test, troubleshoot, and debug a React application through this book as well."
+    text: "Knowing that React is a popular front-end framework, I decided to purchase this book in April 2018 to see if I wanted to choose React over Angular, which I had already gotten to try out in David Copeland's book on Rails. Ludovico Fischer, the author of this book, as well as Michael Jackson, with whom I attended a React webinar in 2018, convinced me that I did, indeed, want to focus on React for complex front-end JavaScript functionality. While I did not find Fischer's method of laying out his React applications particularly appealing, as compared to Jackson's methods or the examples that make use of Styled Components (which I love), I did pick up important aspects of the fundamentals of building components, creating and changing state within a component, and passing props through nested components. In working through this book, I built a word-counter application that would dynamically count the number of words the user had typed into the text area, and live-update a progress bar to give a visual indication of progress towards a stated word-count goal. I learned a bit about how to test, troubleshoot, and debug a React application through this book as well."
   },
   {
     heading: "SQL Queries for Mere Mortals",
@@ -71,12 +73,22 @@ const learning = [
   {
     heading: "Pro Git",
     img: progit,
-    text: "Having gone through many tutorials, walk-throughs, and exercises in programming, I got bits and pieces of how to use git, enough to get by as a developer working alone. However, I recently discovered this free book by Scott Chacon and Ben Straub published to the official git website, and decided it was time to learn git at a deeper level. I'm about halfway through this one as I write, and have already learned quite a bit about effective use of branching, tagging to keep a version history, customizing the commit history view, and more. Since I haven't yet worked with a team, I'm hoping this book will give me a baseline in how to use git collaboratively for when I do get to work with a team."
+    text: "Having gone through many tutorials, walk-throughs, and exercises in programming, I got bits and pieces of how to use git, enough to get by as a developer working alone. However, I recently discovered this free book by Scott Chacon and Ben Straub published to the official git website, and decided it was time to learn git at a deeper level. In picking through this, I have already learned quite a bit about effective use of branching, tagging to keep a version history, customizing the commit history view, and more. Since I haven't yet worked with a team, I'm hoping this book will give me a baseline in how to use git collaboratively for when I do get to work with a team."
   },
   {
     heading: "Exceptional Ruby",
     img: exceptional,
-    text: "I purchased this book, by Avdi Grimm, several months ago, but have only just begun reading it. I hope to gain a better understanding of how to handle failure in more comprehensive ways inside a Rails application."
+    text: "I purchased this book, by Avdi Grimm, in 2017, and have mainly used it as a reference when I find myself needing to handle exceptions in my Rails applications. It has come in handy for understand what is going on under the hood when there is an exception thrown in Ruby, and how to gracefully keep the application running in a stable state, while making the user aware that something went wrong. It has especially helped me to remember to always be thinking about the possible ways that user input can cause unexpected situations in my applications."
+  },
+  {
+    heading: "Internship: C#/.NET",
+    img: edupoint,
+    text: "While I am primarily interested to become a ruby developer, I couldn't pass up this opportunity to do an internship as a Software Developer working in the .NET environment. I am part of an agile team working on the largest, and most complex Student Information System on the market. As an intern, my role is to address issues assigned in sprints, checking in clean C# code through TFS that has been reviewed by peers, and thoroughly tested. I have learned a lot, through this internship, about the structure and conventions of very large, production applications."
+  },
+  {
+    heading: "U. of A. Bootcamp",
+    img: bootcamp,
+    text: "I am currently attending a full-stack web development bootcamp through the University of Arizona, where I am gaining a deeper understanding of how to work across the entire stack. The bootcamp uses the Ruby on Rails framework as its primary teaching environment, so I am feeling right at home so far. By the end of this bootcamp, I will have built 4 Rails applications on my own, and worked on algorithms for a chess application with a team of other students. Through this bootcamp, I am gaining experience in Ruby, Rails, CSS, HTML, JavaScript, and many gems and libraries along the way. The bootcamp began in June 2019, and I am eagerly anticipating my graduation from the program in December 2019."
   }
 ]
 
