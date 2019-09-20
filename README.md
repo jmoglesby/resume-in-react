@@ -3,7 +3,7 @@ After working through the [React tutorial](https://reactjs.org/tutorial/tutorial
 
 The 'learning' and 'creating' buttons, for example, are both derived from the same button component, but with different styling based on the props passed to the component; and the content area is a single component that loads in data from varying sources depending on the state of those buttons.
 
-This was a fun little project to explore the React framework and get my feet under me with using it to build full-featured apps - and it doubles as a nice little resume!
+This was a fun little project to explore the React framework and get my feet under me with using it to build full-featured apps - and it doubles as a nice little resume of my experience!
 
 Everything below is React.js documentation I am keeping here for reference.
 
