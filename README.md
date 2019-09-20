@@ -1,3 +1,14 @@
+# My Developer Story - In React.js
+After working through the [React tutorial](https://reactjs.org/tutorial/tutorial.html) and [*React for Real* by Ludovico Fischer](https://pragprog.com/book/lfreact/react-for-real), and building the simple apps they walk you through, I wanted to see if I could do it for myself. So I built this "resume" of sorts using the componentized framework of React, and incorporating a little bit of [Styled Components](https://www.styled-components.com/). 
+
+The 'learning' and 'creating' buttons, for example, are both derived from the same button component, but with different styling based on the props passed to the component; and the content area is a single component that loads in data from varying sources depending on the state of those buttons.
+
+This was a fun little project to explore the React framework and get my feet under me with using it to build full-featured apps - and it doubles as a nice little resume!
+
+Everything below is React.js documentation I am keeping here for reference.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
